@@ -1,0 +1,34 @@
+[project]
+site_name = "Education Rostering API"
+site_url = "https://thanursan.github.io/education-rostering-api-docs/"
+site_description = "Independent API documentation sample for a fictional education rostering service."
+repo_url = "https://github.com/thanursan/education-rostering-api-docs"
+repo_name = "thanursan/education-rostering-api-docs"
+edit_uri = "edit/main/docs/"
+
+nav = [
+  "index.md",
+  { "Get started" = "get-started.md" },
+  "authentication.md",
+  { "API reference" = [
+    "api-reference/teachers.md",
+    "api-reference/students.md",
+    "api-reference/classes.md",
+    "api-reference/rostering-jobs.md",
+  ] },
+  { "Guides" = [
+    "guides/errors.md",
+  ] },
+]
+
+# Light mode
+[[project.theme.palette]]
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+# Dark mode
+[[project.theme.palette]]
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to light mode"
